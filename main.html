@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr" id="terraCognita">
+	<head>
+		<title>Terra Cognita</title>
+		
+		<meta charset="UTF-8">
+		<meta name="ROBOTS" content="INDEX,FOLLOW">
+		<meta name="keywords" content="terracognita, caroline, moureaux-nery">
+		<meta name="viewport" content="initial-scale=1, user-scalable=no">
+		<meta property="og:title" content="TerraCognita">
+		
+		<!-- Cascading Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="main.css"><!-- Pour tout le monde -->
+	</head>
+	
+	<body onload=resize() onresize=resize()>
+		<div class="header">
+			<img src="IMAGES/LogoTC.png" id="logo"><p id="TerraCognita"><a href="index.html"><b>Terra Cognita</b></a></p>
+			<a href="projet.html"><p id="projet">le projet</p></a>
+			<a href="contact.html"><p id="contact">contact</p></a>
+		</div>
+
+		<div class="banner">
+			<img id="imageFond" class="img" src="IMAGES/main.png">
+
+			<div class="buttons">
+				<a href="designSystem.html"><div class="button1" onmouseover="onHover(1);" onmouseout="offHover();"></div></a>
+				<a href="scenarios.html"><div class="button2" onmouseover="onHover(2);" onmouseout="offHover();"></div></a>
+				<a href="application.html"><div class="button3" onmouseover="onHover(3);" onmouseout="offHover();"></div></a>
+				<a href="premices.html"><div class="button4" onmouseover="onHover(4);" onmouseout="offHover();"></div></a>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p id="copyright">© Caroline Moureaux-Néry tous droits réservés 2021</p>
+		</div>
+		
+		
+		<script>
+		    function resize() {
+		    	var image = document.getElementById("imageFond");
+		    	var div1 = document.getElementsByClassName("button1")[0];
+		    	var div2 = document.getElementsByClassName("button2")[0];
+		    	var div3 = document.getElementsByClassName("button3")[0];
+		    	var div4 = document.getElementsByClassName("button4")[0];
+		    	var w = image.offsetWidth/7;
+		    	var h = image.offsetHeight/4;
+
+		    	//Button 1
+		    	div1.style.top=(2.1*h)+"px";
+		    	div1.style.left="0";
+		    	div1.style.height=(0.6*h)+"px";
+		    	div1.style.width=2.1*w+"px";
+
+		    	//Button 2
+		    	div2.style.top=(1.4*h)+"px";
+		    	div2.style.left=2.4*w+"px";
+		    	div2.style.height=(0.4*h)+"px";
+		    	div2.style.width=2.1*w+"px";
+
+		    	//Button 3
+		    	div3.style.top=(1.82*h)+"px";
+		    	div3.style.left=2.95*w+"px";
+		    	div3.style.height=(0.4*h)+"px";
+		    	div3.style.width=1.15*w+"px";
+
+		    	//Button 4
+		    	div4.style.top=(2.05*h)+"px";
+		    	div4.style.left=4.95*w+"px";
+		    	div4.style.height=(0.6*h)+"px";
+		    	div4.style.width=1.95*w+"px";
+		    }
+	    </script>
+
+	    <script>
+	    	var image = document.getElementById("imageFond");
+			//On fait apparaître un cadre de sélection quand on passe au-dessus des tables
+			function onHover(x) {
+		        if(x==1){ image.src = 'IMAGES/main1.png';}
+		        if(x==2){ image.src = 'IMAGES/main2.png';}
+	        	if(x==3){ image.src = 'IMAGES/main3.png';}
+		        if(x==4){ image.src = 'IMAGES/main4.png';}
+		    }
+
+		    function offHover() {
+		        image.src = 'IMAGES/main.png';
+		    }
+	    </script>
+	</body>

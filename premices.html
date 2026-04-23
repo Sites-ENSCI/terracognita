@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr" id="terraCognita">
+	<head>
+		<title>Terra Cognita/ Prémices</title>
+		
+		<meta charset="UTF-8">
+		<meta name="ROBOTS" content="INDEX,FOLLOW">
+		<meta name="keywords" content="terracognita, caroline, moureaux-nery">
+		<meta name="viewport" content="initial-scale=1, user-scalable=no">
+		<meta property="og:title" content="TerraCognita">
+		
+		<!-- Cascading Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="premices.css"><!-- Pour tout le monde -->
+	</head>
+	
+	
+	<body onload=resize() onresize=resize()>
+		<div class="header">
+			<img src="IMAGES/LogoTC.png" id="logo"><p id="TerraCognita"><a href="main.html"><b>Terra Cognita</b></a></p>
+			<p id="premices"> | 1ères recherches</p>
+			<a href="projet.html"><p id="projet">le projet</p></a>
+			<a href="contact.html"><p id="contact">contact</p></a>
+		</div>
+
+
+		<div class="row">
+			<div class="column1"><a href="https://webexperiments.000webhostapp.com/index.html" target="_blank"><img class="img" src="IMAGES/Premices-15.png"></a></div>
+			<!--<div class="column2"><img class="img" src="IMAGES/Premices-16.png"></div>-->
+			<div class="column1"><img class="img" src="IMAGES/Premices-17.png"></div>
+			<div class="column3"><img class="img" src="IMAGES/Premices-18.png"></div>
+		</div>
+
+		<script>
+		    function resize() {
+		    	//on récupère la hauteur du viewport et s'en sert pour resizer la hauteur de la ligne d'images
+		    	var h = window.innerHeight;
+		    	var hLogo = document.getElementById("logo").offsetHeight + 40; //on récupère la hauteur du logo + ses margin-top et bottom 
+		    	var img = document.getElementsByClassName("img");
+		    	var l = img.length;
+
+		    	for(i=0; i<l; i++){
+		    		img[i].style.height=(h-hLogo-110)+"px"; //on enlève encore 20px vu qu'on a ajouté de la marge en haut et en bas de chaque image (réglé dans .column)
+		    	}
+		    }
+		</script>
+		
+	</body>

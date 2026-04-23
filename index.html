@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr" id="terraCognita-accueil">
+	<head>
+		<title>Terra Cognita</title>
+		
+		<meta charset="UTF-8">
+		<meta name="ROBOTS" content="INDEX,FOLLOW">
+		<meta name="keywords" content="terracognita, caroline, moureaux-nery">
+		<meta name="viewport" content="initial-scale=1, user-scalable=no">
+		<meta property="og:title" content="TerraCognita">
+		
+		<!-- Cascading Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	
+	<body onload=resize() onresize=resize()>
+
+		<div class="banner">
+			<a href="main.html"><img id="imageFond" class="img" src="IMAGES/sceno.png"></a>
+		</div>
+
+		<div class="popup">
+			<p class="h1"><b>Bienvenue<br>dans ma scénographie de diplôme !</b></p>
+			<p class="body"><b>Terra Cognita</b> est une application qui transforme les listes interminables de nos historiques en un paysage 3D navigable. Voici les coulisses du projet, dans une version web de la scénographie présentée pour ma soutennance le 13 novembre 2020. Cliquez sur les tables pour découvrir les étapes du projet.</p>
+			<a href="main.html"><img id="chevron" src="IMAGES/chevron-bottom.svg"></a>
+		</div>
+		
+		
+		<script>
+		    function resize() {
+		    	var image = document.getElementById("imageFond");
+		    	var w = image.offsetWidth/7;
+		    	var h = image.offsetHeight/4;
+		    }
+	    </script>
+	</body>

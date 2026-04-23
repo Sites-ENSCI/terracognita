@@ -1,0 +1,141 @@
+html, body {
+	margin: 0;
+  padding: 0;
+  background-color: #F1F4F6;
+  width: 100%;
+  font-family: Helvetica;
+}
+
+
+
+.header {
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background-color: white;
+    z-index: 1;
+}
+
+#logo {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 48px;
+  z-index: 1;
+}
+
+#TerraCognita {
+  position: absolute;
+  margin-left: 85px;
+  margin-top: 16px;
+  font-size: 15pt;
+}
+
+#scenario {
+  position: absolute;
+  margin-left: 220px;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+
+#projet {
+  position: absolute;
+  margin-left: 87%;
+  font-size: 12pt;
+  margin-top: 18px;
+}
+
+#contact {
+  position: absolute;
+  margin-left: 93%;
+  font-size: 12pt;
+  margin-top: 18px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+.menu {
+  position: fixed;
+  margin-top:70px;
+  left: 87px;
+  display: flex;
+
+  font-family: "PT Sans";
+  font-style: bold;
+  font-size: 1vw;
+  position: fixed;
+}
+
+
+
+.option {
+  margin-right: 2vw;
+}
+
+
+div {
+	margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  margin: 0;
+  padding-top: 140px;
+  padding-bottom: 20px;
+  padding-left: 250px;
+}
+
+.column2 {
+  padding-right: 250px;
+}
+
+.img {
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  margin-bottom: 40px;
+  height: 28vw;
+}
+
+.legende {
+  padding-top: 1vw; padding-bottom: 1vw;
+  padding-left: 1vw;
+  font-family: "PT Sans";
+  font-size: 1vw;
+  color: #FFFFFF;
+  background-color: #294233;
+}
+
+.legende1 {
+  width: 5vw;
+}
+
+.legende2 {
+  width: 14vw;
+}
+
+.legende3 {
+  width: 12vw;
+}
+
+.legende4 {
+  width: 16vw;
+}
+
+.legende5 {
+  width: 18vw;
+}

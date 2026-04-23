@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr" id="terraCognita">
+	<head>
+		<title>Terra Cognita/ Application</title>
+		
+		<meta charset="UTF-8">
+		<meta name="ROBOTS" content="INDEX,FOLLOW">
+		<meta name="keywords" content="terracognita, caroline, moureaux-nery">
+		<meta name="viewport" content="initial-scale=1, user-scalable=no">
+		<meta property="og:title" content="TerraCognita">
+		
+		<!-- Cascading Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="application.css"><!-- Pour tout le monde -->
+	</head>
+	
+	
+	<body>
+
+		<div class="header">
+			<img src="IMAGES/LogoTC.png" id="logo"><p id="TerraCognita"><a href="main.html"><b>Terra Cognita</b></a></p>
+			<p id="scenario"> | Application</p>
+			<a href="projet.html"><p id="projet">le projet</p></a>
+			<a href="contact.html"><p id="contact">contact</p></a>
+		</div>
+
+		<div class="menu">
+			<div class="option" onclick=afficher(0) style="font-weight: bold; text-decoration: underline; text-underline-offset: 3px;">Général</div>
+			<div class="option" onclick=afficher(1)>Camille</div>
+			<div class="option" onclick=afficher(2)>Pierre</div>
+			<div class="option" onclick=afficher(3)>Manon</div>
+			<div class="option" onclick=afficher(4)>Tri</div>
+		</div>
+
+		<!-- GENERAL -->
+		<div class="row">
+			<div class="column">
+				<video controls autoplay muted loop><source src="VIDEOS/ArchipelGeneral.webm" type="video/mp4"></video>
+				<div class="legende legende1"><i><b>Archipel</b></i></div>
+			</div>
+			<div class="column"><video controls>
+				<source src="VIDEOS/Bascule.mp4" type="video/mp4"></video>
+				<div class="legende legende2"><i>Passage d'un espace à un autre</i></div>
+			</div>
+			<div class="column column2">
+				<video controls autoplay muted><source src="VIDEOS/Desert4K.mp4" type="video/mp4"></video>
+				<div class="legende legende1"><i><b>Jardin</b></i></div>
+			</div>
+		</div>
+
+		<!-- CAMILLE -->
+		<div class="row" style="display: none">
+			<div class="column">
+				<video controls autoplay muted><source src="VIDEOS/Camille1.mp4" type="video/mp4"></video>
+				<div class="legende legende5"><i><b>Camille</b> veut voir où elle passe du temps.</i></div>
+			</div>
+			<div class="column"><video controls>
+				<source src="VIDEOS/Camille2.mp4" type="video/mp4"></video>
+				<div class="legende legende2"><i>Les animations l'aident à mieux <br>comprendre ses navigation.</i></div>
+			</div>
+			<div class="column column2">
+				<video controls><source src="VIDEOS/Camille3.mp4" type="video/mp4"></video>
+				<div class="legende legende2"><i>Elles soulignent les stratégies<br>de captation de l'attention.</i></div>
+			</div>
+		</div>
+
+		<!-- PIERRE -->
+		<div class="row" style="display: none">
+			<div class="column">
+				<video controls autoplay muted><source src="VIDEOS/Pierre1.mp4" type="video/mp4"></video>
+				<div class="legende legende5"><i><b>Pierre</b> cherche une vidéo à regarder en rentrant.</i></div>
+			</div>
+			<div class="column">
+				<video controls><source src="VIDEOS/Pierre2.mp4" type="video/mp4"></video>
+				<div class="legende legende5"><i>Il se fait suggérer d'autres ressources.</i></div>
+			</div>
+			<div class="column"><video controls>
+				<source src="VIDEOS/Pierre3.mp4" type="video/mp4"></video>
+				<div class="legende legende2"><i>Il paramètre sa recherche <br>pour ne voir que des vidéos.</i></div>
+			</div>
+			<div class="column">
+				<video controls><source src="VIDEOS/Pierre4.mp4" type="video/mp4"></video>
+				<div class="legende legende3"><i>Il enregistre pour plus tard une des suggestions.</i></div>
+			</div>
+			<div class="column column2">
+				<video controls><source src="VIDEOS/Pierre5.mp4" type="video/mp4"></video>
+				<div class="legende legende5"><i>Il continue à explorer ces suggestions.</i></div>
+			</div>
+		</div>
+
+		<!-- MANON -->
+		<div class="row" style="display: none">
+			<div class="column">
+				<video controls autoplay muted><source src="VIDEOS/Manon1.mp4" type="video/mp4"></video>
+				<div class="legende legende4"><i><b>Manon</b> veut retrouver les ressources<br>qu’elle a vu sur la permaculture.</i></div>
+			</div>
+			<div class="column">
+				<video controls><source src="VIDEOS/Manon2.mp4" type="video/mp4"></video>
+				<div class="legende legende4"><i>Elle crée une nouvelle collection.</i></div>
+			</div>
+			<div class="column column2">
+				<video controls><source src="VIDEOS/Manon4.mp4" type="video/mp4"></video>
+				<div class="legende legende5"><i>Une fois organisée, l'envoie à son père.</i></div>
+			</div>
+		</div>
+
+		<!-- TRI -->
+		<div class="row" style="display: none">
+			<div class="column">
+				<video controls autoplay muted><source src="VIDEOS/Tri1.mp4"  type="video/mp4"></video>
+				<div class="legende legende4"><i><b>Pierre</b> fait du tri dans ses archives.</i></div>
+			</div>
+			<div class="column column2">
+				<video controls><source src="VIDEOS/Tri2.mp4" type="video/mp4"></video>
+				<div class="legende legende4"><i><b>Pierre</b> fait du tri dans ses archives.</i></div>
+			</div>
+		</div>
+
+		<script>
+
+		    function afficher(n) {
+		    	var opt = document.getElementsByClassName("option");
+				var row = document.getElementsByClassName("row");
+		    	
+		    	for(i=0; i<5; i++){
+		    		if(i != n) {
+		    			//on repasse en normal les autres options
+		    			opt[i].style.fontWeight= "normal"; 
+		    			opt[i].style.textDecoration = "none";
+			    		//on masque les vidéos qui étaient affichées
+			    		row[i].style.display = "none";
+		    		}
+		    	}
+
+		    	//on passe l'option sélectionnée en bold
+		    	opt[n].style.fontWeight = "bold";
+		    	opt[n].style.textDecoration = "underline";
+				opt[n].style.textUnderlineOffset = "3px";
+
+		    	//on affiche les bonnes videos
+		    	row[n].style.display = "flex";
+
+		    	//on reinitialise le scoll
+		    	window.scrollTo(0, 0);
+		    }
+		</script>
+		
+	</body>
